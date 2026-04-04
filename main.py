@@ -16,9 +16,7 @@ from rich import box
 console = Console()
 
 def clear_terminal():
-    # windows için 'cls', unix/linux/mac için 'clear'
     os.system('cls' if os.name == 'nt' else 'clear')
-    # rich kütüphanesi ile de temizleme yapalım
     console.clear()
 
 def get_width():
